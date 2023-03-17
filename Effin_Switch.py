@@ -4,8 +4,7 @@ Button=machine.Pin(14,machine.Pin.IN,machine.Pin.PULL_DOWN)
 Led=machine.Pin(15,machine.Pin.OUT)
 
 def start():
-
-    if Button.value()==True:
+       
         while True:
             if Button.value()==True:     
                 print(Button.value())
